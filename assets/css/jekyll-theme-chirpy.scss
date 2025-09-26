@@ -8,4 +8,184 @@
 {%- endif -%}
 ';
 
-/* append your custom style below */
+/*************** Append your custom style below ***********/
+
+
+/* ===========================
+   ENLACES GENERALES
+   =========================== */
+
+/* Hover/focus en enlaces */
+#sidebar a:hover,
+#sidebar a:focus {
+  color: #E53935 !important;
+  
+}
+
+/* Bloques de cita */
+blockquote {
+  border-left: 0.25rem solid #E53935 !important;
+}
+
+/* Código inline */
+code {
+  color: #E53935 !important;
+}
+
+/* Sidebar: item activo */
+#sidebar .nav-item.active > .nav-link {
+  color: #E53935 !important;
+  border-left: 2px solid #E53935 !important;
+}
+
+/* Enlaces dentro de posts */
+.post-content a {
+  color: #E53935 !important;
+}
+
+.post-content a:hover {
+  color: darken(#E53935, 10%) !important;
+}
+
+/* ===========================
+   BOTONES
+   =========================== */
+#sidebar .btn,
+#sidebar button,
+#sidebar input[type="submit"] {
+  background-color: #E53935 !important;
+  border-color: #E53935 !important;
+  color: #fff !important;
+}
+
+
+/* ===========================
+   TAGS / ETIQUETAS
+   =========================== */
+
+
+/* ===========================
+   SIDEBAR (TITLE Y SUBTITLE)
+   =========================== */
+#sidebar .site-title {
+  color: #E53935 !important;
+}
+
+#sidebar .site-subtitle {
+  color: #fff !important;
+}
+
+/* ===========================
+   PAGINACIÓN
+   =========================== */
+
+/* ===========================
+   MODO CLARO/OSCURO
+   =========================== */
+
+
+
+
+   
+  /* --- Variables de uso --- */
+$mi-rojo: #E53935;
+
+/* ----------------------------
+   Enlaces / links generales
+   ---------------------------- */
+#main-wrapper a, #main-wrapper em, #main-wrapper i
+{
+  color: $mi-rojo !important;
+}
+
+
+
+#main-wrapper nav a:hover,
+#main-wrapper nav a:focus {
+  color: #fff !important;
+  background-color: $mi-rojo !important;
+  border-color: #fff !important;
+}
+
+
+
+#main-wrapper footer a:hover,
+#main-wrapper footer a:focus {
+  color: #fff !important;
+  background-color: $mi-rojo !important;
+  border-color: #fff !important;
+}
+
+#panel-wrapper a:hover,
+#panel-wrapper a:focus 
+{
+  color: #fff !important;
+  background-color: $mi-rojo !important;
+  border-color: #fff !important;
+}
+
+
+/* ------------------------
+   Etiquetas / tags
+   ------------------------ */
+.tag a,
+a.tag {
+  border: 1px solid $mi-rojo !important;
+  background-color: transparent;
+  color: $mi-rojo !important;
+}
+
+.tag a:hover,
+.post-tags a:hover,
+a.tag:hover {
+  background-color: $mi-rojo !important;
+  color: #fff !important;
+  border-color: $mi-rojo !important;
+}
+
+
+
+
+
+/* Hover de las cards en la home */
+#post-list .card .card-body .card-title, #post-list .card .card-body .card-meta, #post-list .card .card-body .card-text{
+  
+  color: #E53935 !important; /* cambia el texto a blanco para que contraste */
+}
+
+
+
+
+/* -----------------------------
+   Tabla de contenido (TOC)
+   ----------------------------- */
+.toc .active a {
+  color: $mi-rojo !important;
+  font-weight: bold !important;
+}
+
+.toc .active a:hover {
+  color: $mi-rojo !important;
+  font-weight: bold !important;
+}
+
+/* -----------------------------------
+   Adaptar modo claro / modo oscuro
+   ----------------------------------- */
+:root[data-mode="light"] {
+  --link-color: $mi-rojo;
+  --hover-color: $mi-rojo;
+}
+
+:root[data-mode="dark"] {
+  --link-color: $mi-rojo;
+  --hover-color: $mi-rojo;
+}
+
+
+/* Ocultar sección Lecturas adicionales */
+#related-posts     /* Clase común en Chirpy para lecturas adicionales */
+ {
+  display: none !important;
+}
+
