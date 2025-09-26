@@ -100,7 +100,12 @@ $mi-rojo: #E53935;
 
 
 
-
+#main-wrapper nav a:hover,
+#main-wrapper nav a:focus {
+  color: #fff !important;
+  background-color: $mi-rojo !important;
+  border-color: #fff !important;
+}
 
 
 
@@ -177,6 +182,7 @@ a.tag:hover {
   --hover-color: $mi-rojo;
 }
 
+
 /* Ocultar sección Lecturas adicionales */
 #related-posts     /* Clase común en Chirpy para lecturas adicionales */
  {
@@ -200,5 +206,31 @@ a.tag:hover {
   border-color: #fff !important;     /* borde blanco si existía naranja */
 }
 
+/* Breadcrumbs (migajas de pan) */
+.breadcrumb a,
+.breadcrumb a:visited {
+  color: #E53935 !important; /* texto de los enlaces */
+}
+
+.breadcrumb a:hover {
+  color: darken(#E53935, 10%) !important; /* hover más oscuro */
+}
+
+/* Texto actual (breadcrumb activo) */
+.breadcrumb .active {
+  color: #E53935 !important;
+}
 
 
+
+
+
+
+
+
+
+
+
+#topbar #breadcrumb{
+  display:none
+}
