@@ -6,7 +6,7 @@
     d-flex flex-column justify-content-center text-muted
     flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
   "
->
+><!--
   <p> 
     {%- capture _platform -%}
       <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
@@ -24,7 +24,7 @@
     {%- endcapture -%}
 
     {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
- 
+ -->
 
   <p>
     {{- '©' }}
@@ -45,6 +45,6 @@
         {{- site.data.locales[include.lang].copyright.brief -}}
       </span>
     {% endif %}
-  </p>
+  </p> 
   
 </footer>
