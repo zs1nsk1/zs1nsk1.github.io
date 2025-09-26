@@ -100,12 +100,7 @@ $mi-rojo: #E53935;
 
 
 
-#main-wrapper nav a:hover,
-#main-wrapper nav a:focus {
-  color: #fff !important;
-  background-color: $mi-rojo !important;
-  border-color: #fff !important;
-}
+
 
 
 
@@ -188,4 +183,23 @@ a.tag:hover {
  {
   display: none !important;
 }
+
+/* ------------------------
+   Hover de tags
+   ------------------------ */
+.tag a,
+.post-tags a,
+a.tag {
+  transition: all 0.3s ease;
+}
+
+.tag a:hover,
+.post-tags a:hover,
+a.tag:hover {
+  background-color: #fff !important; /* fondo blanco si quieres */
+  color: #fff !important;            /* texto blanco */
+  border-color: #fff !important;     /* borde blanco si existía naranja */
+}
+
+
 
