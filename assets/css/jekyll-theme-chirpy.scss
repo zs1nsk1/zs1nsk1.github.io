@@ -12,15 +12,49 @@
 
 
 /* ===========================
-   ENLACES GENERALES
+   SIDEBAR (TITLE Y SUBTITLE)
+   =========================== */
+#sidebar .site-title {
+  color: #E53935 !important;
+}
+
+#sidebar .site-subtitle {
+  color: #fff !important;
+}
+
+
+/* ===========================
+      GENERALES
    =========================== */
 
-/* Hover/focus en enlaces */
+
+/* Hover/focus en enlaces menu */
 #sidebar a:hover,
 #sidebar a:focus {
   color: #E53935 !important;
   
 }
+
+/* Sidebar: item activo */
+#sidebar .nav-item.active > .nav-link {
+  color: #E53935 !important;
+  border-left: 2px solid #E53935 !important;
+}
+
+
+#sidebar .btn,
+#sidebar button,
+#sidebar input[type="submit"] {
+  background-color: #E53935 !important;
+  border-color: #E53935 !important;
+  color: #fff !important;
+}
+
+/* Hover de los titulos de  Cards post en la home */
+#post-list .card .card-body .card-title {
+  color: #E53935 !important; 
+}
+
 
 /* Bloques de cita */
 blockquote {
@@ -32,146 +66,48 @@ code {
   color: #E53935 !important;
 }
 
-/* Sidebar: item activo */
-#sidebar .nav-item.active > .nav-link {
+.code-header i{
   color: #E53935 !important;
-  border-left: 2px solid #E53935 !important;
 }
+
 
 /* Enlaces dentro de posts */
 .post-content a {
   color: #E53935 !important;
 }
 
+
+
 .post-content a:hover {
-  color: darken(#E53935, 10%) !important;
-}
-
-/* ===========================
-   BOTONES
-   =========================== */
-#sidebar .btn,
-#sidebar button,
-#sidebar input[type="submit"] {
-  background-color: #E53935 !important;
-  border-color: #E53935 !important;
-  color: #fff !important;
+  color: (#E53935, 10%) !important;
 }
 
 
-/* ===========================
-   TAGS / ETIQUETAS
-   =========================== */
+
+/*   Oculta - Migajas de Pan   */
+
+#topbar #breadcrumb{
+  display:none
+} 
 
 
-/* ===========================
-   SIDEBAR (TITLE Y SUBTITLE)
-   =========================== */
-#sidebar .site-title {
-  color: #E53935 !important;
+ 
+/*   Ocultar sección Lecturas adicionales  */
+#related-posts   /* Clase común en Chirpy para lecturas adicionales */
+ {
+  display: none !important;
 }
 
-#sidebar .site-subtitle {
-  color: #fff !important;
-}
 
-/* ===========================
-   PAGINACIÓN
-   =========================== */
 
 /* ===========================
    MODO CLARO/OSCURO
    =========================== */
 
-
-
-
-   
-  /* --- Variables de uso --- */
+/* --- Variables de uso --- */
 $mi-rojo: #E53935;
 
-/* ----------------------------
-   Enlaces / links generales
-   ---------------------------- */
-#main-wrapper a, #main-wrapper em, #main-wrapper i
-{
-  color: $mi-rojo !important;
-}
 
-
-
-#main-wrapper nav a:hover,
-#main-wrapper nav a:focus {
-  color: #fff !important;
-  background-color: $mi-rojo !important;
-  border-color: #fff !important;
-}
-
-
-
-#main-wrapper footer a:hover,
-#main-wrapper footer a:focus {
-  color: #fff !important;
-  background-color: $mi-rojo !important;
-  border-color: #fff !important;
-}
-
-#panel-wrapper a:hover,
-#panel-wrapper a:focus 
-{
-  color: #fff !important;
-  background-color: $mi-rojo !important;
-  border-color: #fff !important;
-}
-
-
-/* ------------------------
-   Etiquetas / tags
-   ------------------------ */
-.tag a,
-a.tag {
-  border: 1px solid $mi-rojo !important;
-  background-color: transparent;
-  color: $mi-rojo !important;
-}
-
-.tag a:hover,
-.post-tags a:hover,
-a.tag:hover {
-  background-color: $mi-rojo !important;
-  color: #fff !important;
-  border-color: $mi-rojo !important;
-}
-
-
-
-
-
-/* Hover de las cards en la home */
-#post-list .card .card-body .card-title, #post-list .card .card-body .card-meta, #post-list .card .card-body .card-text{
-  
-  color: #E53935 !important; /* cambia el texto a blanco para que contraste */
-}
-
-
-
-
-/* -----------------------------
-   Tabla de contenido (TOC)
-   ----------------------------- */
-.toc .active a {
-  color: $mi-rojo !important;
-  font-weight: bold !important;
-}
-
-.toc .active a:hover {
-  color: $mi-rojo !important;
-  font-weight: bold !important;
-}
-
-/* -----------------------------------
-   Adaptar modo claro / modo oscuro
-   ----------------------------------- */
 :root[data-mode="light"] {
   --link-color: $mi-rojo;
   --hover-color: $mi-rojo;
@@ -183,42 +119,202 @@ a.tag:hover {
 }
 
 
-/* Ocultar sección Lecturas adicionales */
-#related-posts     /* Clase común en Chirpy para lecturas adicionales */
- {
-  display: none !important;
+/* ----------------------------
+   CONTENT
+   ---------------------------- */
+
+
+/* SECCION DE BUSCADOR TOP */
+#topbar-wrapper i{
+  color: $mi-rojo !important;
 }
 
-/* ------------------------
-   Hover de tags
-   ------------------------ */
-.tag a,
-.post-tags a,
-a.tag {
-  transition: all 0.3s ease;
+.input-focus{
+  border-color: $mi-rojo !important;
+
 }
 
-.tag a:hover,
-.post-tags a:hover,
-a.tag:hover {
-  background-color: #fff !important; /* fondo blanco si quieres */
-  color: #fff !important;            /* texto blanco */
-  border-color: #fff !important;     /* borde blanco si existía naranja */
+/***** PANEL DERECHA *********/
+#panel-wrapper a{
+  color: $mi-rojo !important;
 }
 
-/* Breadcrumbs (migajas de pan) */
-.breadcrumb a,
-.breadcrumb a:visited {
-  color: #E53935 !important; /* texto de los enlaces */
+#panel-wrapper a:hover{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
 }
 
-.breadcrumb a:hover {
-  color: darken(#E53935, 10%) !important; /* hover más oscuro */
+#panel-wrapper .post-tag:hover{
+  background-color: #fff !important;
+  font-weight: 600;
+}
+ 
+/* -----------------------------
+   Tabla de contenido (TOC)
+   -----------------------------  */
+#toc-wrapper ul .is-active-link{
+  color: $mi-rojo !important;
+  font-weight: bold !important;
 }
 
-/* Texto actual (breadcrumb activo) */
-.breadcrumb .active {
-  color: #E53935 !important;
+.toc .active a:hover {
+  color: $mi-rojo !important;
+  font-weight: bold !important;
+} 
+
+/******* FOOTER *********/
+#main-wrapper footer a{
+  color: $mi-rojo !important;
+}
+
+
+#main-wrapper footer a:hover,
+#main-wrapper footer a:focus {
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}  
+
+
+
+/* CONTENIDO CENTRAL */
+.post-meta i{
+  color: $mi-rojo !important;
+}
+
+/* article search */
+#search-result-wrapper a{
+  color: $mi-rojo !important;
+}
+
+#search-result-wrapper a:hover{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}
+
+/* article header meta*/
+.post-meta a{
+  color: $mi-rojo !important;
+}
+
+.post-meta a:hover{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}
+
+/* article parte inferior tags */
+
+.post-tags  i{
+  color: $mi-rojo !important;
+}
+
+.post-tags  a{
+  color: $mi-rojo !important;
+}
+
+.post-tags  a:hover{
+  color: $mi-rojo !important;
+  background-color: #fff !important;
+  border-color: $mi-rojo !important;
+  font-weight: 600;
+}
+
+
+/********* Post navigation *************/
+
+.post-navigation a{
+  color: $mi-rojo !important;
+}
+
+
+.post-navigation a:hover{
+  background-color: #fff !important;
+  
+}
+
+.post-navigation .btn{
+  border-color: $mi-rojo !important;
+}
+
+#main-wrapper nav a:hover,
+#main-wrapper nav a:focus{
+  color: #fff !important;
+  background-color: $mi-rojo !important;
+  border-color: #fff !important;
+}
+
+.post-tail-wrapper a{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}
+.post-tail-wrapper a:hover{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}
+
+
+/* Page Archives */
+
+#archives a{
+  color: $mi-rojo !important;
+}
+
+#archives a:hover{
+  color: $mi-rojo !important;
+}
+
+/* Page Categories */
+
+.card.categories a{
+  color: $mi-rojo !important;
+}
+
+.card.categories a:hover{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}
+
+#page-category a{
+  color: $mi-rojo !important;
+}
+
+#page-category a:hover{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}
+
+
+/* Page Categories */
+
+#tags a{
+  color: $mi-rojo !important;
+  
+}
+
+#tags a:hover{
+  background-color: #fff;
+  border-color: $mi-rojo !important;
+  font-weight: 600;
+}
+
+#page-tag a{
+  color: $mi-rojo !important;
+}
+
+#page-tag a:hover{
+  color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
+}
+
+/* -----------------------
+   Botón “volver arriba”
+   ----------------------- */
+
+#back-to-top {
+  border-color: #E53935 !important;
+}
+
+#back-to-top:hover {
+  background-color: (#E53935, 8%) !important;
 }
 
 
@@ -231,6 +327,19 @@ a.tag:hover {
 
 
 
-#topbar #breadcrumb{
-  display:none
-}
+ 
+   
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+ 
