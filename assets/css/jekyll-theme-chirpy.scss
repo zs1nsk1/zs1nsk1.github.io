@@ -20,15 +20,24 @@ $mi-rojo: #E53935;
 #sidebar .site-title {
   color: $mi-rojo !important;
 }
-
-#sidebar .site-subtitle {
-  color: #fff !important;
-}
-
-
+ 
 /* ===========================
       GENERALES
    =========================== */
+
+/* Border del Avatar */
+:root {
+  --avatar-border-color: #E53935 !important;
+}
+
+#sidebar #avatar{
+  box-shadow: var(--avatar-border-color) 0 0 0 8px !important;
+}
+
+#avatar  {
+  border: 2px solid white !important;
+}
+
 
 
 /* Hover/focus en enlaces menu */
