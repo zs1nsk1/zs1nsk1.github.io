@@ -10,12 +10,15 @@
 
 /*************** Append your custom style below ***********/
 
+/* --- Variables de uso --- */
+$mi-rojo: #E53935;
+
 
 /* ===========================
    SIDEBAR (TITLE Y SUBTITLE)
    =========================== */
 #sidebar .site-title {
-  color: #E53935 !important;
+  color: $mi-rojo !important;
 }
 
 #sidebar .site-subtitle {
@@ -31,55 +34,55 @@
 /* Hover/focus en enlaces menu */
 #sidebar a:hover,
 #sidebar a:focus {
-  color: #E53935 !important;
+  color: $mi-rojo!important;
   
 }
 
 /* Sidebar: item activo */
 #sidebar .nav-item.active > .nav-link {
-  color: #E53935 !important;
-  border-left: 2px solid #E53935 !important;
+  color: $mi-rojo !important;
+  border-left: 2px solid $mi-rojo !important;
 }
 
 
 #sidebar .btn,
 #sidebar button,
 #sidebar input[type="submit"] {
-  background-color: #E53935 !important;
-  border-color: #E53935 !important;
+  background-color: $mi-rojo !important;
+  border-color: $mi-rojo !important;
   color: #fff !important;
 }
 
 /* Hover de los titulos de  Cards post en la home */
 #post-list .card .card-body .card-title {
-  color: #E53935 !important; 
+  color: $mi-rojo !important; 
 }
 
 
 /* Bloques de cita */
 blockquote {
-  border-left: 0.25rem solid #E53935 !important;
+  border-left: 0.25rem solid $mi-rojo !important;
 }
 
 /* Código inline */
 code {
-  color: #E53935 !important;
+  color: $mi-rojo !important;
 }
 
 .code-header i{
-  color: #E53935 !important;
+  color: $mi-rojo !important;
 }
 
 
 /* Enlaces dentro de posts */
 .post-content a {
-  color: #E53935 !important;
+  color: $mi-rojo !important;
 }
 
 
 
 .post-content a:hover {
-  color: (#E53935, 10%) !important;
+  color: ($mi-rojo, 10%) !important;
 }
 
 
@@ -104,8 +107,7 @@ code {
    MODO CLARO/OSCURO
    =========================== */
 
-/* --- Variables de uso --- */
-$mi-rojo: #E53935;
+
 
 
 :root[data-mode="light"] {
@@ -310,11 +312,11 @@ $mi-rojo: #E53935;
    ----------------------- */
 
 #back-to-top {
-  border-color: #E53935 !important;
+  border-color: $mi-rojo !important;
 }
 
 #back-to-top:hover {
-  background-color: (#E53935, 8%) !important;
+  background-color: ($mi-rojo, 8%) !important;
 }
 
 
